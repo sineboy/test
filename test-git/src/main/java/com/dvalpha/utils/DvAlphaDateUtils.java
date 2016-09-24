@@ -94,8 +94,11 @@ public class DvAlphaDateUtils {
  
       DvAlphaDateUtils util = new DvAlphaDateUtils();
       Date salida = new Date();
-        util.fechahoyCompareFechaSalida(salida);
-                
+       int res= util.fechahoyCompareFechaSalida(salida);
+        Date semanaMenos=util.sumarRestarDiasFecha(salida, -10);
+        
+        System.out.println("compara :"+res);
+        System.out.println("Resta :"+semanaMenos);
            
  
  
